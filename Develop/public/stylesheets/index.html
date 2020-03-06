@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boot Camp Homework 14 - Reverse Engineering</title>
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+</head>
+<body>
+  <div class="uk-card uk-card-primary uk-box-shadow-large"><div class="uk-container uk-padding-large">
+    <h1 class="uk-heading-small">Reverse Engineering!</h1>
+  <h3>Boot Camp Homework 14</h3>
+</div></div>
+  <div class="uk-container uk-padding-large">
+    <article class="uk-article">
+      <h1 class="uk-article-title"><a class="uk-link-reset" href="">/</a></h1>
+      <p class="uk-text-lead">package.json</p>
+      <p>NPM configuration file.</p>
+      <p class="uk-text-lead">server.js</p>
+      <p>Activates the routes and opens the port for the website.</p>
+      <h1 class="uk-article-title"><a class="uk-link-reset" href="">/config</a></h1>
+      <p class="uk-text-lead">config.json</p>
+      <p>JSON file containing configuration information for MySQL database access.</p>
+      <p class="uk-text-lead">passport.js</p>
+      <p>Does something!</p>
+      <p class="uk-text-lead">middleware/isAuthenticated.js</p>
+      <p>Helper for html-routes.js. Returns information that allows html-routes.js to know whether the user is logged in or not.</p>
+      <h1 class="uk-article-title"><a class="uk-link-reset" href="">/models</a></h1>
+      <p class="uk-text-lead">index.js</p>
+      <p>Gathers up .js files in the /models directory and creates connections to all defined databases.</p>
+      <p class="uk-text-lead">user.js</p>
+      <p>Provides definitions for MySQL database.</p>
+      <h1 class="uk-article-title"><a class="uk-link-reset" href="">/public</a></h1>
+      <p class="uk-text-lead">login.html</p>
+      <p>User logs in with email and password combination. Uses login.js for functionality.</p>
+      <p class="uk-text-lead">members.html</p>
+      <p>User sees this page after logging in or creating account. Currently a placeholder displaying a greeting to the user. Uses members.js for functionality.</p>
+      <p class="uk-text-lead">signup.html</p>
+      <p>User signs up with email and password combination. Uses signup.js for functionality</p>
+      <p class="uk-text-lead">js/login.js</p>
+      <p>Helper for login.html page. It calls the login API and redirects to members.html if successful.</p>
+      <p class="uk-text-lead">js/members.js</p>
+      <p>Helper for members.html page. In current version of page it retrieves the user's email address.</p>
+      <p class="uk-text-lead">js/signup.js</p>
+      <p>Helper for signup.html page. It calls the login API and redirects to members.html if successful.</p>
+      <p class="uk-text-lead">stylesheets/style.css</p>
+      <p>Stylesheet for the HTML pages.</p>
+      <h1 class="uk-article-title"><a class="uk-link-reset" href="">/routes</a></h1>
+      <p class="uk-text-lead">api-routes.js</p>
+      <p>Routes API calls requiring access to the database.</p>
+      <p class="uk-text-lead">html-routes.js</p>
+      <p>Routes website calls. If a user access /members without logging in they will be redirected to the signup page. Uses middleware.js</p>
+    </article>
+  </div>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
